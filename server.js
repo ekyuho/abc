@@ -12,6 +12,8 @@ app.get('/', function (req, res) {
     res.send('Your IP Address is '+ req.ip.replace(/^.*:/, ''))
 })
 
+//  curl "http://localhost:9900/logone?u=1&f=3&s=44&i=0H12.75,0T17.32,0C595,0M0,0Q5,0D18,1D27,0S33,1S47"
+
 app.all('/add|/logone', function(req, res) {
     var u3
     var s3
